@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\ProjectCustomFieldDefinition;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\ProjectCustomFieldDefinition;
+use Centrium\Api\Model\ResultSet;
 
 class ProjectCustomFieldDefinitionsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class ProjectCustomFieldDefinitionsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\ProjectCustomFieldDefinition
+	 * @return \Centrium\Api\Model\ProjectCustomFieldDefinition
 	 */
 	public function getDefinition($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/custom-fields/projects/' . $id, array(), array());

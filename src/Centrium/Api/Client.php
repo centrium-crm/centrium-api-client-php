@@ -1,12 +1,12 @@
 <?php 
 
-namespace Innodia\Centrium\Api;
+namespace Centrium\Api;
 
-use Innodia\Centrium\Api\Exception\APIException;
-use Innodia\Centrium\Api\Exception\ForbiddenException;
-use Innodia\Centrium\Api\Exception\NotAuthorizedException;
-use Innodia\Centrium\Api\Exception\NotFoundException;
-use Innodia\Centrium\Api\Exception\ValidationException;
+use Centrium\Api\Exception\APIException;
+use Centrium\Api\Exception\ForbiddenException;
+use Centrium\Api\Exception\NotAuthorizedException;
+use Centrium\Api\Exception\NotFoundException;
+use Centrium\Api\Exception\ValidationException;
 
 class Client {
 	
@@ -42,123 +42,123 @@ class Client {
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\AccountModule
+	 * @return \Centrium\Api\Module\AccountModule
 	 */
 	public function account()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\AccountModule::class);
+		return $this->module(\Centrium\Api\Module\AccountModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ContactsModule
+	 * @return \Centrium\Api\Module\ContactsModule
 	 */
 	public function contacts() 
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ContactsModule::class);
+		return $this->module(\Centrium\Api\Module\ContactsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ContactSettingsModule
+	 * @return \Centrium\Api\Module\ContactSettingsModule
 	 */
 	public function contactSettings()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ContactSettingsModule::class);
+		return $this->module(\Centrium\Api\Module\ContactSettingsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ContactCustomFieldDefinitionsModule
+	 * @return \Centrium\Api\Module\ContactCustomFieldDefinitionsModule
 	 */
 	public function contactCustomFieldDefinitions()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ContactCustomFieldDefinitionsModule::class);
+		return $this->module(\Centrium\Api\Module\ContactCustomFieldDefinitionsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\NotesModule
+	 * @return \Centrium\Api\Module\NotesModule
 	 */
 	public function notes()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\NotesModule::class);
+		return $this->module(\Centrium\Api\Module\NotesModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\NoteSettingsModule
+	 * @return \Centrium\Api\Module\NoteSettingsModule
 	 */
 	public function noteSettings()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\NoteSettingsModule::class);
+		return $this->module(\Centrium\Api\Module\NoteSettingsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\TasksModule
+	 * @return \Centrium\Api\Module\TasksModule
 	 */
 	public function tasks()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\TasksModule::class);
+		return $this->module(\Centrium\Api\Module\TasksModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\TaskSettingsModule
+	 * @return \Centrium\Api\Module\TaskSettingsModule
 	 */
 	public function taskSettings()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\TaskSettingsModule::class);
+		return $this->module(\Centrium\Api\Module\TaskSettingsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\TaskCustomFieldDefinitionsModule
+	 * @return \Centrium\Api\Module\TaskCustomFieldDefinitionsModule
 	 */
 	public function taskCustomFieldDefinitions()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\TaskCustomFieldDefinitionsModule::class);
+		return $this->module(\Centrium\Api\Module\TaskCustomFieldDefinitionsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\DealsModule
+	 * @return \Centrium\Api\Module\DealsModule
 	 */
 	public function deals()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\DealsModule::class);
+		return $this->module(\Centrium\Api\Module\DealsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\DealSettingsModule
+	 * @return \Centrium\Api\Module\DealSettingsModule
 	 */
 	public function dealSettings()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\DealSettingsModule::class);
+		return $this->module(\Centrium\Api\Module\DealSettingsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\DealCustomFieldDefinitionsModule
+	 * @return \Centrium\Api\Module\DealCustomFieldDefinitionsModule
 	 */
 	public function dealCustomFieldDefinitions()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\DealCustomFieldDefinitionsModule::class);
+		return $this->module(\Centrium\Api\Module\DealCustomFieldDefinitionsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ProjectsModule
+	 * @return \Centrium\Api\Module\ProjectsModule
 	 */
 	public function projects()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ProjectsModule::class);
+		return $this->module(\Centrium\Api\Module\ProjectsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ProjectSettingsModule
+	 * @return \Centrium\Api\Module\ProjectSettingsModule
 	 */
 	public function projectSettings()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ProjectSettingsModule::class);
+		return $this->module(\Centrium\Api\Module\ProjectSettingsModule::class);
 	}
 	
 	/**
-	 * @return \Innodia\Centrium\Api\Module\ProjectCustomFieldDefinitionsModule
+	 * @return \Centrium\Api\Module\ProjectCustomFieldDefinitionsModule
 	 */
 	public function projectCustomFieldDefinitions()
 	{
-		return $this->module(\Innodia\Centrium\Api\Module\ProjectCustomFieldDefinitionsModule::class);
+		return $this->module(\Centrium\Api\Module\ProjectCustomFieldDefinitionsModule::class);
 	}
 	
 	

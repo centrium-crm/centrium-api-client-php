@@ -1,6 +1,6 @@
 <?php 
 
-namespace Innodia\Centrium\Api\Model;
+namespace Centrium\Api\Model;
 
 class ContactCustomFieldDefinition extends BaseModel {
 	

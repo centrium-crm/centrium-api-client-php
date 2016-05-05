@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\Note;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\Note;
+use Centrium\Api\Model\ResultSet;
 
 class NotesModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class NotesModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\Note
+	 * @return \Centrium\Api\Model\Note
 	 */
 	public function getNote($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/notes/' . $id, array(), array());

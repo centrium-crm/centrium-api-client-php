@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\ContactType;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\ContactType;
+use Centrium\Api\Model\ResultSet;
 
 class ContactSettingsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class ContactSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\ContactType
+	 * @return \Centrium\Api\Model\ContactType
 	 */
 	public function getContactType($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/contacts/types/' . $id, array(), array());

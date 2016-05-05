@@ -1,6 +1,6 @@
 <?php 
 
-namespace Innodia\Centrium\Api\Exception;
+namespace Centrium\Api\Exception;
 
 class ForbiddenException extends APIException {
 	

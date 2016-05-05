@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\ContactCustomFieldDefinition;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\ContactCustomFieldDefinition;
+use Centrium\Api\Model\ResultSet;
 
 class ContactCustomFieldDefinitionsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class ContactCustomFieldDefinitionsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\ContactCustomFieldDefinition
+	 * @return \Centrium\Api\Model\ContactCustomFieldDefinition
 	 */
 	public function getDefinition($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/custom-fields/contacts/' . $id, array(), array());

@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\ProjectType;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\ProjectType;
+use Centrium\Api\Model\ResultSet;
 
 class ProjectSettingsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class ProjectSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\ProjectType
+	 * @return \Centrium\Api\Model\ProjectType
 	 */
 	public function getProjectType($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/projects/types/' . $id, array(), array());

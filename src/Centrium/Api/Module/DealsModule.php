@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\Deal;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\Deal;
+use Centrium\Api\Model\ResultSet;
 
 class DealsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class DealsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\Deal
+	 * @return \Centrium\Api\Model\Deal
 	 */
 	public function getDeal($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/deals/' . $id, array(), array());

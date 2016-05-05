@@ -1,14 +1,14 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\DealStage;
-use Innodia\Centrium\Api\Model\ResultSet;
-use Innodia\Centrium\Api\Model\DealWonReason;
-use Innodia\Centrium\Api\Model\DealLostReason;
-use Innodia\Centrium\Api\Model\Innodia\Centrium\Api\Model;
+use Centrium\Api\Model\DealStage;
+use Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\DealWonReason;
+use Centrium\Api\Model\DealLostReason;
+use Centrium\Api\Model\Centrium\Api\Model;
 
 class DealSettingsModule extends BaseModule {
 	
@@ -23,7 +23,7 @@ class DealSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\DealStage
+	 * @return \Centrium\Api\Model\DealStage
 	 */
 	public function getDealStage($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/deals/stages/' . $id, array(), array());
@@ -45,7 +45,7 @@ class DealSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 *
-	 * @return \Innodia\Centrium\Api\Model\DealWonReason
+	 * @return \Centrium\Api\Model\DealWonReason
 	 */
 	public function getDealWonReason($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/deals/reasons/won' . $id, array(), array());
@@ -67,7 +67,7 @@ class DealSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 *
-	 * @return \Innodia\Centrium\Api\Model\DealLostReason
+	 * @return \Centrium\Api\Model\DealLostReason
 	 */
 	public function getDealLostReason($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/deals/reasons/lost' . $id, array(), array());

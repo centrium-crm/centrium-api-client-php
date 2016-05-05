@@ -1,12 +1,12 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\User;
-use Innodia\Centrium\Api\Model\Group;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\User;
+use Centrium\Api\Model\Group;
+use Centrium\Api\Model\ResultSet;
 
 class AccountModule extends BaseModule {
 	
@@ -21,7 +21,7 @@ class AccountModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\User
+	 * @return \Centrium\Api\Model\User
 	 */
 	public function getUser($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/account/users/' . $id, array(), array());
@@ -43,7 +43,7 @@ class AccountModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 *
-	 * @return \Innodia\Centrium\Api\Model\Group
+	 * @return \Centrium\Api\Model\Group
 	 */
 	public function getGroup($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/account/groups/' . $id, array(), array());

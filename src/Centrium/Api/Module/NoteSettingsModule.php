@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\NoteType;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\NoteType;
+use Centrium\Api\Model\ResultSet;
 
 class NoteSettingsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class NoteSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\NoteType
+	 * @return \Centrium\Api\Model\NoteType
 	 */
 	public function getNoteType($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/notes/types/' . $id, array(), array());

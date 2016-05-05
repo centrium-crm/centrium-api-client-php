@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\Task;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\Task;
+use Centrium\Api\Model\ResultSet;
 
 class TasksModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class TasksModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\Task
+	 * @return \Centrium\Api\Model\Task
 	 */
 	public function getTask($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/tasks/' . $id, array(), array());

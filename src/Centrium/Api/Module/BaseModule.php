@@ -1,13 +1,13 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 class BaseModule {
 
 	/**
 	 * 
-	 * @var \Innodia\Centrium\Api\Client apiClient
+	 * @var \Centrium\Api\Client apiClient
 	 */
 	protected $apiClient;
 	

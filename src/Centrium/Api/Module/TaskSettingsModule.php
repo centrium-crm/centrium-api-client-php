@@ -1,11 +1,11 @@
 <?php
 
-namespace Innodia\Centrium\Api\Module;
+namespace Centrium\Api\Module;
 
-use Innodia\Centrium\Api\Client;
+use Centrium\Api\Client;
 
-use Innodia\Centrium\Api\Model\TaskType;
-use Innodia\Centrium\Api\Model\ResultSet;
+use Centrium\Api\Model\TaskType;
+use Centrium\Api\Model\ResultSet;
 
 class TaskSettingsModule extends BaseModule {
 	
@@ -20,7 +20,7 @@ class TaskSettingsModule extends BaseModule {
 	/**
 	 * @param integer $id
 	 * 
-	 * @return \Innodia\Centrium\Api\Model\TaskType
+	 * @return \Centrium\Api\Model\TaskType
 	 */
 	public function getTaskType($id) {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/tasks/types/' . $id, array(), array());
