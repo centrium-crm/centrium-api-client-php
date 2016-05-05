@@ -1,0 +1,12 @@
+{
+    "name": "centrium-crm/centrium-api-client-php",
+    "description": "Centrium PHP API client",
+    "type": "library",
+    "require": {},
+    
+    "autoload": {
+		"psr-0": {
+			"Centrium": "src"
+		}
+	}
+}
