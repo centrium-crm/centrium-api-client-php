@@ -12,7 +12,7 @@ class ProjectCustomFieldDefinitionsModule extends BaseModule {
 	public function listDefinitions() {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/custom-fields/projects', array(), array());
 		
-		$rs = new ResultSet($data, ContactCustomFieldDefinition::class);
+		$rs = new ResultSet($data, ProjectCustomFieldDefinition::class);
 		
 		return $rs;
 	}

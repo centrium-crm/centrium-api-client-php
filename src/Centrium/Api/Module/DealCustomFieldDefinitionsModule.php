@@ -12,7 +12,7 @@ class DealCustomFieldDefinitionsModule extends BaseModule {
 	public function listDefinitions() {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/custom-fields/deals', array(), array());
 		
-		$rs = new ResultSet($data, ContactCustomFieldDefinition::class);
+		$rs = new ResultSet($data, DealCustomFieldDefinition::class);
 		
 		return $rs;
 	}

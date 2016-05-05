@@ -12,7 +12,7 @@ class TaskCustomFieldDefinitionsModule extends BaseModule {
 	public function listDefinitions() {
 		$data = $this->apiClient->call(Client::METHOD_GET, '/settings/custom-fields/tasks', array(), array());
 		
-		$rs = new ResultSet($data, ContactCustomFieldDefinition::class);
+		$rs = new ResultSet($data, TaskCustomFieldDefinition::class);
 		
 		return $rs;
 	}
