@@ -2,8 +2,10 @@
     "name": "centrium-crm/centrium-api-client-php",
     "description": "Centrium PHP API client",
     "type": "library",
-    "require": {},
-    
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*"
+    },    
     "autoload": {
 		"psr-0": {
 			"Centrium": "src"
